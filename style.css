@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Rubik:wght@300&display=swap");
+body {
+  background-color: rgb(244, 240, 246);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-family: "Rubik", sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 60px;
+  background-color: rgb(64, 6, 70);
+  color: white;
+}
+.logo img {
+  width: 50px;
+  padding: 2px 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+nav ul li {
+  padding: 6px 27px;
+}
+.container {
+  background-color: rgb(44, 5, 47);
+  min-height: 67vh;
+  width: 85%;
+  margin: 10px auto;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  font-family: "Merriweather";
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.bottom {
+  height: 100px;
+  background-color: rgb(82, 10, 88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.icons {
+  cursor: pointer;
+  margin-top: 2px;
+}
+.icons i {
+  margin: 5px 5px;
+  padding: 7px 17px;
+  border-radius: 10px;
+}
+.icons i:hover {
+  background-color: #330033;
+}
+#progressbar {
+  margin-top: 15px;
+  width: 70vw;
+}
+.songitem {
+  height: 40px;
+  display: flex;
+  width: 50%;
+  background-color: white;
+  color: black;
+  margin: 10px 0;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+}
+.songitem img {
+  width: 35px;
+  margin: 0 23px;
+  border-radius: 20px;
+}
+.timestamp {
+  margin: 0 23px;
+}
+.timestamp i {
+  margin: 0 10px;
+  width: 20px;
+  cursor: pointer;
+}
+.songitemcontainer {
+  height: 63vh;
+  margin-top: 30px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.songinfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  width: 45px;
+  padding: 0 13px;
+}
+.songinfo {
+  font-family: "Merriweather";
+  position: absolute;
+  left: 9vw;
+  margin-top: 20px;
+}
+
+#currentsongtime {
+  color: white;
+  margin: 0px 5px;
+  padding-left: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#songduration {
+  color: white;
+  margin-left: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#slash {
+  margin: 0px 5px;
+}
+#autoplay {
+  font-family: "Merriweather";
+  position: absolute;
+  right: 9vw;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 6px;
+  color: #330033;
+  background-color: #ffe6ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#autoplay:hover {
+  background-color: #330033;
+  color: white;
+}
+.volume {
+  margin-left: 15px;
+  position: absolute;
+  right: 17vw;
+  margin-top: 27px;
+}
+#volimage {
+  width: 20px;
+  margin: 0px 5px;
+}
+#volumebar {
+  width: 20vw;
+  right: 9vw;
+}
+#volumebuttons {
+  display: flex;
+  justify-content: center;
+}
+.volbtn {
+  padding: 0 12px;
+  margin: 0 8px;
+  font-size: 17px;
+  font-weight: bolder;
+  color: #330033;
+  background-color: #ffe6ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#volumebutton {
+  cursor: pointer;
+  background-color: rgb(82, 10, 88);
+}

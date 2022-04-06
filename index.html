@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musicentre</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">
+          <img src="logo.png" alt="Musicentre" /><span>Musicentre</span>
+        </li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="songlist">
+        <h2>List of Songs:</h2>
+          <div class="songitemcontainer" id="songitemcontainer">
+              <!-- <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="0" class="fa-regular fa-2x songplayitem fa-2x fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="1" class="fa-regular fa-2x songplayitem fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="2" class="fa-regular fa-2x songplayitem fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="3" class="fa-regular fa-2x songplayitem fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="4" class="fa-regular fa-2x songplayitem  fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="5" class="fa-regular fa-2x songplayitem  fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="6" class="fa-regular fa-2x songplayitem  fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                  <img alt="1">
+                  <span class ="songname"></span>
+                  <span class="songlistplay"><span class="timestamp"><i id="7" class="fa-regular fa-2x songplayitem  fa-circle-play"></i></span></i></span>
+              </div>
+              <div class="songitem">
+                <img alt="1">
+                <span class ="songname"></span>
+                <span class="songlistplay"><span class="timestamp"><i id="8" class="fa-regular fa-2x songplayitem  fa-circle-play"></i></span></i></span>
+            </div>
+
+            <div class="songitem">
+              <img alt="1">
+              <span class ="songname"></span>
+              <span class="songlistplay"><span class="timestamp"><i id="9" class="fa-regular fa-2x songplayitem  fa-circle-play"></i></span></i></span>
+          </div>
+          </div>
+      </div> -->
+      
+      <div class="songbanner"></div>
+    </div>
+    <div class="bottom">
+      <input type="range" class = "slider" value="0" name="range" id="progressbar" min="0" max="100" />
+      <div class="icons">
+        <i class="fa-solid fa-2x fa-backward-step " id="previous"></i>
+        <i class="fa-regular fa-2x fa-2x fa-circle-play " id="playbutton"></i>
+        <i class="fa-solid fa-2x fa-forward-step " id ="next"></i>
+      </div>
+      <div class="songinfo">
+          <img src="playing.gif" alt="gif" id="gif"><span id="mastersongname"></span><span id="currentsongtime"></span><span id="slash"></span><span id="songduration"></span>
+      </div>
+      <button id="autoplay">
+         Play in Loop
+      </button>
+      <div class="volume">
+     <img src="volume.png" id="volimage" alt="volume"  onclick = "mute(this.getAttribute('class'))">
+        <input type="range"  value="0" name="range" id="volumebar" min="0" max="100" />
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0799ddad4d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
